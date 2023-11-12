@@ -20,7 +20,7 @@ Duck DNS token
 - `duckdns_log_file`: default `/var/log/duckdns.log`  
 Log file to write curl request output to
 
-- `duckdns_cronjob_user`: default `root`  
+- `duckdns_cron_user`: default `root`  
 User to add cron job to
 
 Dependencies
@@ -36,8 +36,8 @@ Example Playbook
   roles:
     - role: duckdns
       vars:
-        duckdns_domain: "<domain>"
-        duckdns_token: "<token>"
+        duckdns_domain: "example1,example2"
+        duckdns_token: "923e22d3-67cf-4243-ae34-026f159b3828"
 ```
 
 License
