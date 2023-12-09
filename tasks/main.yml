@@ -19,5 +19,5 @@
     day: "*"
     hour: "*"
     minute: "*/5"
-    job: curl -k -o {{ duckdns_log_file }} "https://www.duckdns.org/update?domains={{ duckdns_domain }}&token={{ duckdns_token }}&ip="
+    job: curl -o {{ duckdns_log_file }} "https://www.duckdns.org/update?domains={{ duckdns_domain }}&token={{ duckdns_token }}"
     state: present
